@@ -1,0 +1,57 @@
+
+
+
+
+
+  .container {
+    position: absolute;
+    font-family: Arial;
+  }
+  
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* opacity: 0.8; */
+  }
+
+
+
+  .btn {
+    background-color: red;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+    opacity: 0.9;
+  }
+
+
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .zoom {
+    padding: 50px;
+    /* background-color: green; */
+    transition: transform .2s;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+  }
+
+

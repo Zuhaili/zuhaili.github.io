@@ -1,0 +1,417 @@
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navCSS.css">
+    <link rel="stylesheet" href="three_column_layout.css">
+    <link rel="stylesheet" href="banner-image-text.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /* For button */
+        .button {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        /* footer */
+
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: DarkSalmon;
+            color: white;
+        }
+
+
+
+        #myVideo {
+            position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+            z-index: -1;
+        }
+
+
+
+
+        p {
+            color: black;
+        }
+
+
+
+        .white-bg {
+            background-color: white;
+            opacity: 0.9;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        * {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+        /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+  
+    </style>
+</head>
+
+<body>
+  
+    <!-- <ul>
+        
+        <nav class="header-left">
+            <li><a href="#default" class="logo">World Xplore</a></li>
+        </nav>
+        <li><a class="active" href="#home">Home</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Package Tours</a>
+          <div class="dropdown-content">
+            <a href="#">Book Now</a>
+            <a href="#">Package Info</a>
+            <a href="#">Discount</a>
+          </div>
+        </li>
+        <li><a href="">Rediscover Singapore</a></li>
+        <li><a href="cruises.html">Cruises</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+      </ul> -->
+
+
+      <header>
+        <a href="#main-menu"
+           id="main-menu-toggle"
+           class="menu-toggle"
+           aria-label="Open main menu">
+          <span class="sr-only">Open main menu</span>
+          <span class="fa fa-bars" aria-hidden="true"></span>
+        </a>
+        
+        <h1 class="logo">World Xplore</h1>
+        
+        <nav id="main-menu" class="main-menu" aria-label="Main menu">
+          <a href="#main-menu-toggle"
+             id="main-menu-close"
+             class="menu-close"
+             aria-label="Close main menu">
+            <span class="sr-only">Close main menu</span>
+            <span class="fa fa-close" aria-hidden="true"></span>
+          </a>
+          <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Package Tours</a>
+                <div class="dropdown-content">
+                  <a href="#">Book Now</a>
+                  <a href="#">Package Info</a>
+                  <a href="#">Discount</a>
+                </div>
+              </li>
+              <li><a href="">Rediscover Singapore</a></li>
+              <li><a href="cruises.html">Cruises</a></li>
+              <li><a href="contact_us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <a href="#main-menu-toggle"
+           class="backdrop"
+           tabindex="-1"
+           aria-hidden="true" hidden></a>
+      </header>
+
+
+
+
+    <!-- Banner -->
+    <!-- <img src="images/Singapore-Banner.jpg" alt="banner" width="2000 " height="715"> -->
+    <aside class="container-image-text">
+        <img src="images/Singapore-Banner.jpg" alt="banner" style="width:100%;">
+        <!-- <div class="bottom-left">Bottom Left</div> -->
+        <aside class="top-left">Visit Singapore</aside>
+        <div class="top-right">
+            <div class="logo">
+                <div class="zuhaili"></div>
+                <h1 class="logo_text">World Xplore</h1>
+            </div>
+        </div>
+        <!-- <div class="bottom-right">Bottom Right</div> -->
+        <aside class="centered-image-text"><button class="button">Explore Singapore</button></aside>
+    </aside>
+
+    <br><br>
+
+
+
+
+<div class="white-bg">
+
+
+    <!-- Article Section -->
+    <section class="row">
+        <article class="column">
+            <h2>Attractions</h2>
+            <aside class="container-image-overlay-fade">
+                <img src="images/uss.jpg" alt="Universal Studio Singapore" class="image-image-overlay-fade"
+                    style="width:100%">
+                <aside class="middle-image-overlay-fade">
+                    <aside class="text-image-overlay-fade"><a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+                    </aside>
+                </aside>
+            </aside>
+            <p>Mouse hover on the image to see fun things to do in Singapore. From food and dining to arts and
+                adventure, explore curated experiences in Singapore.</p>
+        </article>
+
+
+
+        <article class="column">
+            <h2>Local Cuisines</h2>
+            <aside class="container-image-overlay-fade">
+                <img src="images/satay.jpg" alt="Satay" class="image-image-overlay-fade" style="width:100%">
+                <aside class="middle-image-overlay-fade">
+                    <aside class="text-image-overlay-fade"><a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+                    </aside>
+                </aside>
+            </aside>
+            <p>Best local food must try when you landed here in Singapore. We got the best Satay at the best place which
+                is Lau Pa Sat.</p>
+        </article>
+
+
+
+
+        <article class="column">
+            <h2>Accommodation</h2>
+            <aside class="container-image-overlay-fade">
+                <img src="images/hotel.jpg" alt="Hotel" class="image-image-overlay-fade" style="width:100%">
+                <aside class="middle-image-overlay-fade">
+                    <aside class="text-image-overlay-fade"><a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+                    </aside>
+                </aside>
+            </aside>
+            <p>Best local food must try when you landed here in Singapore. We got the best Satay at the best place which
+                is Lau Pa Sat.</p>
+        </article>
+    </section>
+
+
+
+
+    <br><br><br>
+
+
+    <h1 style="text-align: center;">Singapore heritage</h1>
+
+     
+
+
+
+    <div class="row">
+  <div class="col-6">
+    <img src="images/hajilane.jpg" alt="Haji Lane" width="100%">
+  </div>
+
+  <div class="col-6">
+    <div class="aside">
+        <h2>Haji Lane</h2>
+                    <p>From quaint cafes to amazing murals, this lane provides everything for a leisure time. Even the
+                        crowd is quite diversified here as there might be young photographers, middle age women spending
+                        their afternoons in comfortable undresses and hipster crowd shopping for quirky accessories.
+                        Colorful background and wall graffiti attracts photographers for great photography sessions.
+                        Among the famous historical places in Singapore, Haji Lane is a place you shouldn’t miss. The
+                        Kampong Glam District is the present day home of the Native Malay and Muslim Community that is
+                        centered with the picturesque Masjid Sultan. This place also has vintage record shops and cozy
+                        cafes for tourists to have a peaceful break in this busy lane. This lane is every fashionista’s
+                        paradise as it has beautiful dress shirts and an impressive retail stretch.</p>
+    </div>
+  </div>
+</div>
+
+    <br><br><br>
+
+
+
+    <div class="row">
+ 
+
+ <div class="col-6">
+    <img src="images/SultanMosque.jpg" alt="Sultan Mosque" width="100%">
+ </div>
+
+ <div class="col-6">
+   <div class="aside">
+    <h2>Sultan Mosque</h2>
+                    <p>One of the best Aingapore heritage buildings, this magnificent mosque was built in 1824 by the
+                        first sultan of Singapore named Sultan Hussein Shah. It has massive golden domes and huge prayer
+                        halls which can accommodate 5000 people for mass prayer. Sultan mosque has great religious
+                        importance and also is the biggest mosque in Singapore which makes it an important historical
+                        monument. It was renovated a century later it was built and donations by poor Muslims were made
+                        so that everyone can contribute their bit for reconstruction. Though this massive monument is a
+                        great attraction, tourists should also make some time to walk around the Arab Quarters where
+                        this mosque is located. An amalgamation of old and new shops selling food, clothing, souvenirs
+                        and many things are available in this street. Visitors are welcomed freely in this mosque if
+                        they are dressed appropriately, if not coats are provided.</p>
+   </div>
+ </div>
+</div>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+<!-- <div class="flex-container">
+    <div class="flex-item-left">1</div>
+    
+  </div> -->
+
+  
+
+  <!-- end of banner -->
+    </div>
+    <br><br><br>
+
+    <!-- Video -->
+    <video width="100%" controls autoplay muted loop id="myVideo">
+        <source src="videos/singapore.mp4" type="video/mp4">
+    </video>
+    <!-- <video width="600" autoplay muted loop>
+        <source src="videos/video.mp4" type="video/mp4">
+        </video> -->
+
+
+    <!-- Footer -->
+    <footer>
+        <h3>Need Help</h3>
+        <p>Email: <a href="mailto:hege@example.com">hege@example.com</a></p>
+        <p>Hotline: +65 90977864</p>
+    </footer>
+
+
+
+
+
+
+
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+    </script>
+</body>
+
+</html>
